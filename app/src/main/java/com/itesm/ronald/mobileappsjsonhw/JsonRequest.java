@@ -27,17 +27,15 @@ import java.util.ArrayList;
  * Created by Ronald on 2/16/2015.
  */
 public class JsonRequest extends AsyncTask<String, Void, ArrayList<Friend>> {
-    private Activity activity;
-    private ProgressDialog dialog;
+//    private Activity activity;
+//    private ProgressDialog dialog;
     private ArrayList<Friend> friends = new ArrayList<Friend>();
     private FriendAdapter adapter;
-    private ListView list;
 
     public JsonRequest(Activity activity, FriendAdapter adapter, ArrayList<Friend> friends, ListView list){
-        this.activity = activity;
+//        this.activity = activity;
         this.friends = friends;
         this.adapter = adapter;
-        this.list = list;
         //this.dialog = new ProgressDialog(activity.getApplicationContext());
     }
 
@@ -98,9 +96,7 @@ public class JsonRequest extends AsyncTask<String, Void, ArrayList<Friend>> {
 
     @Override
     protected void onPostExecute(ArrayList<Friend> result){
-        this.adapter = new FriendAdapter(activity, result, 0);
-        this.list.setAdapter(this.adapter);
- //       this.adapter.notifyDataSetChanged();
+        this.adapter.notifyDataSetChanged();
         //this.dialog.dismiss();
     }
 
