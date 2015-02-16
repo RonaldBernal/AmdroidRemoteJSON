@@ -1,0 +1,37 @@
+{"Contacts": [
+	{
+	  "Name": "Alvaro Laguna",
+	  "Hobby": "Watching YouTube videos",
+	  "Age": "22",
+	  "Phone": "33 3576 9795",
+	  "Address": "Somewhere in Guadalajara"
+	},
+	{
+	  "Name": "Antonio Hernández",
+	  "Hobby": "Web Developing",
+	  "Age": "21",
+	  "Phone": "31 1134 3208",
+	  "Address": "Somewhere in Tepic"
+	},
+	{
+	  "Name": "Antonio Reyes",
+	  "Hobby": "Killing Narcos as a Vigilante",
+	  "Age": "21",
+	  "Phone": "33 2509 1133",
+	  "Address": "Somewhere in Michoacán"
+	},
+	{
+	  "Name": "Diego Camargo",
+	  "Hobby": "Playing Dota2",
+	  "Age": "21",
+	  "Phone": "33 1064 5679",
+	  "Address": "Somewhere in Culiacan"
+	},
+	{
+	  "Name": "Eros Espínola",
+	  "Hobby": "Web Developing",
+	  "Age": "21",
+	  "Phone": "31 1187 7480",
+	  "Address": "Somewhere in Tepic or Baja California"
+	}
+]}
