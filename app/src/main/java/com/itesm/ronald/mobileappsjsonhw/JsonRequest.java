@@ -42,7 +42,7 @@ public class JsonRequest extends AsyncTask<String, Void, ArrayList<Friend>> {
     protected void onPreExecute(){
         super.onPreExecute();
         this.dialog = new ProgressDialog(context);
-        this.dialog.setTitle("Loading Videos");
+        this.dialog.setTitle("Loading Friends");
         this.dialog.show();
 
     }
