@@ -63,9 +63,9 @@ public class FriendAdapter extends BaseAdapter implements ListAdapter{
         return convertView;
     }
 
-    public void tooglevisibility(ListView list, int position, boolean visible){
-        ListView listV = list;
+    public void toogleVisibility(ListView list, int position){
         View item = list.getChildAt(position);
+        Boolean visible = this.friends.get(position).getVisible();
         if(!visible) {
             item.findViewById(R.id.textAge).setVisibility(View.VISIBLE);
             item.findViewById(R.id.textPhone).setVisibility(View.VISIBLE);
@@ -75,6 +75,7 @@ public class FriendAdapter extends BaseAdapter implements ListAdapter{
             item.findViewById(R.id.textPhone).setVisibility(View.GONE);
             item.findViewById(R.id.textAddress).setVisibility(View.GONE);
         }
+        friends.get(position).setVisible(!visible);
     }
 }
 

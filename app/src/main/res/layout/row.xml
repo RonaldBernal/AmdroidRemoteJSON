@@ -18,10 +18,10 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="Small Text"
         android:id="@+id/textAge"
-        android:layout_above="@+id/textHobby"
         android:layout_centerHorizontal="true"
         android:layout_toRightOf="@+id/textName"
-        android:layout_marginLeft="15dp" />
+        android:layout_marginLeft="15dp"
+        android:layout_alignBaseline="@+id/textName" />
 
     <TextView
         android:layout_width="wrap_content"

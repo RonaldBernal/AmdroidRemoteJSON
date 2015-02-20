@@ -5,6 +5,7 @@ package com.itesm.ronald.mobileappsjsonhw;
  */
 public class Friend {
     private String name, hobby, age, phone, address;
+    private Boolean visible;
 
     public Friend(String name, String hobby, String age, String phone, String address) {
         this.name = name;
@@ -12,6 +13,7 @@ public class Friend {
         this.age = age;
         this.phone = phone;
         this.address = address;
+        this.visible = false;
     }
 
     public String getName() {
@@ -52,5 +54,13 @@ public class Friend {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public Boolean getVisible() {
+        return visible;
+    }
+
+    public void setVisible(Boolean visible) {
+        this.visible = visible;
     }
 }
