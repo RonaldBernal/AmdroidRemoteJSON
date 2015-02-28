@@ -32,7 +32,9 @@ public class MainActivity extends ActionBarActivity implements AdapterView.OnIte
     public void retrieveJSON(View v){
         JsonRequest jreq = new JsonRequest(this, this.adapter, this.friends, list);
         jreq.execute(jsonURL);
-        this.list.setLayoutParams(new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.MATCH_PARENT));
+        this.list.setLayoutParams(new RelativeLayout.LayoutParams(
+                RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.MATCH_PARENT
+        ));
         findViewById(R.id.loadBtn).setVisibility(View.GONE);
     }
 
